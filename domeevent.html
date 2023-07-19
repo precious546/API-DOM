@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS CLASS</h1> 
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit tempore, tenetur sed rerum repellat temporibus fuga quibusdam odio nemo veniam.</p>
+    <section id="about" class="about">
+     <div class="box1">
+         <h1>Box 1</h1>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam quia vero adipisci saepe repellendus vel earum voluptatibus iusto nihil debitis.</p>
+         <button id="box1-Btn">Box 1</button>
+     </div>
+     <div class="box2">
+         <h1>Box 2</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vel rerum beatae aspernatur, dolores deserunt recusandae eligendi atque alias rem!</p>
+         <button id="box2-Btn">Box 2</button>
+     </div>
+     <div class="box3">
+         <h1>Box 3</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eveniet ratione voluptates voluptatem corrupti velit repudiandae ut laborum quisquam consectetur.</p>
+         <button id="box3-Btn">Box 3</button>
+     </div>
+    </section> 
+    <form id="submitForm">
+        <div class="name">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" placeholder="name"><br>
+        </div>
+        <div class="username">
+            <label for="Username">username:</label><br>
+            <input type="text" id="username" placeholder="username"><br>
+        </div>
+        <div class="email">
+            <label for="email">Email:</label><br>
+            <input type="email" id="Email" placeholder="Email"><br>
+        </div>
+        <div class="password">
+            <label for="password">Password</label><br>
+            <input type="password" id="Password" placeholder="Password"><br>
+        </div>
+        <div class="confirm password">
+            <label for="confirm password">Confirm Password</label><br>
+            <input type="confirm password" id="confirm password" placeholder="confirm password"><br>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+//FOR THE SELECTION 
+        let name = document.querySelector('#name');
+        let username = document.querySelector('#username');
+        let email = document.querySelector('#email');
+        let password = document.querySelector('#password');
+        let comfirm_password = document.querySelector('#confirm password');
+        let submitForm = document.querySelector('#submitForm');
+        console.log(submitForm);
+        submitForm.addEventListener('click', function(event){
+            event.preventDefault();
+            submitForm.style.backgroundColor = 'orange';
+
+        })
+
+
+//FOR BOX1
+        let box1 = document.querySelector('.box1');
+        let box1_Btn = document.querySelector('#box1-Btn');
+        box1_Btn.addEventListener('click', function(event){
+            box1.style.backgroundColor = 'orange';
+            box1.style.padding = '15px';
+            box1.style.color = 'floralwhite';
+        })
+
+//FOR BOX2
+        let box2 = document.querySelector('.box2');
+        let box2_Btn = document.querySelector('#box2-Btn');
+        box2_Btn.addEventListener('click', function(event){
+            box2.style.backgroundColor = 'pink';
+            box2.style.padding = '15px'
+            box2.style.color = 'floralwhite';
+        })
+
+//FOR BOX3
+        let box3 = document.querySelector('.box3');
+        let box3_Btn = document.querySelector('#box3-Btn');
+        box3_Btn.addEventListener('click', function(event){
+            box3.style.backgroundColor = 'blue';
+            box3.style.padding = '15px';
+            box3.style.color = 'floralwhite';
+        })
+    </script>
+</body>
+</html>

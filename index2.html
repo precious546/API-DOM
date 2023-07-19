@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Lister2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header" class="bg-success text-white p-4 mb-3">
+        <div class="container">
+            <h1 id="header-title">Item lister <span style="display: none;">123</span></h1>
+        </div>
+    </header>
+    <div class="container">
+        <div id="main" class="card card-body">
+            <h2 class="title">Add Items</h2>
+            <form class="form-inline mb-3">
+                <input type="text" class="form-control mr-2">
+                <input type="submit" class="btn btn-dark" value="Submit">
+            </form>
+            <h2 class="title">Items</h2>
+            <ul class="list-group" id="main">
+                <li class="list-group-item">Item 1</li>
+                <li class="list-group-item">Item 2</li>
+                <li class="list-group-item">Item 3</li>
+                <li class="list-group-item">Item 4</li>
+            </ul>
+        </div>
+    </div>
+    <!-- <h1>The value is: <span id="displayValue"></span></h1>
+    <form>
+        <select id="operator">
+            <option value="Add">Add</option>
+            <option value="Subtract">Subtract</option>
+            <option value="Multiply">Multiply</option>
+            <option value="Division">Division</option>
+            <option value="None">No operator</option>
+        </select>
+        <button type="button" id="SubmitBtn">Submit</button>
+    </form> -->
+
+    <script>
+//EXAMINE THE DOCUMENT OBJECT
+        // console.log(document.domain);
+        // console.log(document.URL);
+        // console.log(document.title);
+        // console.log(document.all);
+        // console.log(document.all[12]);
+        // console.log(document.forms);
+//GETELEMENTBYID
+        let headerTit = document.getElementById('header-title');
+        
+//difference between the textContent n  is styling 
+        console.log(headerTit.innerText);
+        // headerTit.innerHTML = '<h3>say goodbye<h3/>';
+            let header = document.getElementById('main-header');
+            console.log(header);
+            header.style.borderBottom = '5 px solid black';
+
+
+
+
+
+    </script>
+</body>
+</html>
